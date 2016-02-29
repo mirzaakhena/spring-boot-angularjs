@@ -18,17 +18,11 @@ angular.module('myApp')
 
 
 .factory('DataService', function($resource) {
-    // return $resource('/data/:userId', null, {
-    //     update: {
-    //         method: 'PUT'
-    //     }
-    // });
-    return $resource('http://localhost:8080/user/:userId', null, {
-        'update': {
+    return $resource('/user/:userId', null, {
+        update: {
             method: 'PUT'
         }
     });
-
 })
 
 .controller('DataDataController', function($scope, $uibModal, DataService) {
