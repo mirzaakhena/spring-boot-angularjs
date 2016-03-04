@@ -38,11 +38,11 @@ public class UserService {
 	}
 
 	@Transactional
-	public void update(Long id, UserDto dto) {
+	public User update(Long id, UserDto dto) {
 		User user = userDao.findOne(id);
 		user.setName(dto.getName());
 		user.setAddress(dto.getAddress());
-		userDao.save(user);
+		return userDao.save(user);
 	}
 
 }

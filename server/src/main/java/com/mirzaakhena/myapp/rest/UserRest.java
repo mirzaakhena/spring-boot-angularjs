@@ -41,9 +41,8 @@ public class UserRest {
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
-	public ResponseEntity<?> update(@PathVariable Long id, @RequestBody UserDto dto) {
-		userService.update(id, dto);
-		return new ResponseEntity<>(HttpStatus.OK);
+	public ResponseEntity<?> update(@PathVariable Long id, @RequestBody UserDto dto) {		
+		return new ResponseEntity<>(userService.update(id, dto), HttpStatus.OK);
 	}
 
 }
