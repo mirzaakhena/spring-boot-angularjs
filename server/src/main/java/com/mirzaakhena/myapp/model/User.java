@@ -8,6 +8,11 @@ import javax.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * 
+ * @author mirzaakhena
+ *
+ */
 @Getter
 @Setter
 @Entity

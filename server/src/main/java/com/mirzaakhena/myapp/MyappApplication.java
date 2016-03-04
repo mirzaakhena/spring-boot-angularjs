@@ -3,6 +3,11 @@ package com.mirzaakhena.myapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 
+ * @author mirzaakhena
+ *
+ */
 @SpringBootApplication
 public class MyappApplication {
 

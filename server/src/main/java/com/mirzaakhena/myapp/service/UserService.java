@@ -10,6 +10,11 @@ import com.mirzaakhena.myapp.dao.UserDao;
 import com.mirzaakhena.myapp.dto.UserDto;
 import com.mirzaakhena.myapp.model.User;
 
+/**
+ * 
+ * @author mirzaakhena
+ *
+ */
 @Service
 public class UserService {
 

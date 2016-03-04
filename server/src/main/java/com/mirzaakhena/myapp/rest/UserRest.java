@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mirzaakhena.myapp.dto.UserDto;
 import com.mirzaakhena.myapp.service.UserService;
 
+/**
+ * 
+ * @author mirzaakhena
+ *
+ */
 @RestController
 @RequestMapping("/user")
 public class UserRest {
